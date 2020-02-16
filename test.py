@@ -35,7 +35,7 @@ def get_pose_torch(img, landmark):
 
 for idx, data in enumerate(train_loader, 0):
     image = data['image'].cuda()
-    landmarks = data['landmarks']
+    # landmarks = data['landmarks']
 
     output = net(image)
     real_img = data['image'].cuda()
